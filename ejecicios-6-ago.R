@@ -78,27 +78,27 @@ x <- x[x > 0] <- (2*x)[x > 0] #todos los positivos * 2
 # Ejercicios sobre un vector x:
 
 # Asignarle al vector y los elementos de x mayores que 0 (los otros no deben aparecer)
-vec1 <- function(arr) {
-  arr <- arr[arr > 0]
-  return(arr)
+vec1 <- function(x) {
+  x <- x[x > 0]
+  return(x)
 }
 # Asignarle al vector y los inversos (es decir 1/x) de los elementos de x que no sean 0 (evitando así el error de división por 0)
-vec2 <- function(arr){
-  arr <- arr[arr != 0]
-  arr <- 1 / arr
-  return(arr)
+vec2 <- function(x){
+  x <- x[x != 0]
+  x <- 1 / x
+  return(x)
 }
 
 # Asignarle al vector y todos los elementos de x multiplicados por 3
-vec3 <- function(arr){
- arr <- arr * 3
-  return(arr)
+vec3 <- function(x){
+ x <- x * 3
+  return(x)
 }
 
 # Asignarle al vector y los elementos de x que son > 0 seguidos de los elementos de x que son < 0. Es decir, primero los positivos y a continuación los negativos. Ejemplo: si x = 1 -1 4 0 -2 3, deberá resultar y = 1 4 3 -1 -2.
-vec4 <- function(arr){
-arr <- c((arr[arr > 0]),(arr[arr < 0]))
-    return (arr)
+vec4 <- function(x){
+x <- c((x[x > 0]),(x[x < 0]))
+    return (x)
 }
 
 # Producto externo
