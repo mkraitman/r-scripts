@@ -88,7 +88,7 @@ vecPromedioFila<- function(m){
   return(res)
 }
 
-#con una traspuesta lo solucionamos con menos codigo
+#con una traspuesta t(x) lo solucionamos con menos codigo
 vecPromedioFilaTr<- function(m){
   return(vecPromedioColumna(t(m)))
 }
