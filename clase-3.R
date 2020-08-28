@@ -21,15 +21,17 @@ interseccion <- function(x, y){
   return(z)    
 }
 
+#sin repeticion
+interseccion <- function(x, y){
+z <- x[x %in% y]
+return(z)
+}
+
 #diferencia
 diferencia <- function(x, y){
 z <- x[y %in% x]
 return(z)
 }
 
-interseccion <- function(x, y){
-z <- x[x %in% y]
-return(z)
-}
 
 
