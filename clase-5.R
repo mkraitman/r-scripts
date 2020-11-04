@@ -31,14 +31,14 @@ clusters <- kmeans(df[,-1],4)
 
 
 #
-  distancia <- function(p, q, x, y) {
-    return (sqrt((p - x) ** 2 + (q - y) ** 2))
-  }
+dist <- function(p, q, x, y) {
+  return (sqrt((p - x) ** 2 + (q - y) ** 2))
+}
 
-radioDeCluster <- function(X, Y, centroideX, centroideY) {
+radio <- function(X, Y, centroideX, centroideY) {
   distancias <- c()
   for (i in 1:length(X)) {
-    distancias[i] <- distancia(X[i], Y[i], centroideX, centroideY)
+    dist[i] <- dist(X[i], Y[i], centroideX, centroideY)
   }
   return(max(distancias))
 }
